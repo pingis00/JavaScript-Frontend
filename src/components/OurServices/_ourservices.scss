@@ -1,0 +1,111 @@
+.our-services {
+    background-color: #F0EFE9;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    position: relative;
+    z-index: 0;
+
+    .background-lines-white {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+    }
+
+    .container {
+
+        .section-title {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+
+            .service {
+                background-color: white;
+                padding: 50px 30px;
+                transition: background-color 0.2s ease-in-out;
+
+                i {
+                    display: flex;
+                    justify-content: flex-end;
+                    font-size: 3rem;
+                    --fa-primary-color: white;
+                    --fa-secondary-color: black;
+                    --fa-secondary-opacity: 1;
+                }
+
+                &.active,
+                &:hover {
+                    background-color: #F9D783;
+
+                    i {
+                        --fa-primary-color: black;
+                        --fa-secondary-color: white;
+                    } 
+                }
+
+                .box {
+                    color: #191919;
+                    text-decoration: none;
+                    border-top: 2px solid black;
+                    padding-left: 40px;
+                }
+            }
+        }
+
+        .center-content {
+            margin-top: 45px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .our-services {
+
+        .container {
+
+            .services {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    
+}
+
+@media (min-width: 1200px) {
+    .our-services {
+        padding: 120px 0;
+
+        .container {
+
+            .section-title {
+                width: 38%;
+                text-align: left;
+            }
+
+            .services {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                               
+                h3 {
+                margin-top: 25px;                   
+                }
+
+                p {
+                    margin-bottom: 26px;
+                    letter-spacing: -0.5px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+    
+}

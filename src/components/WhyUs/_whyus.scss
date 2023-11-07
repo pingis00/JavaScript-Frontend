@@ -1,0 +1,169 @@
+// .why-us {
+//     position: relative;
+//     padding-top: 60px;
+
+//     .background-field {
+//         display: block;
+//         position: absolute;
+//         width: 100%;
+//         height: 200px;
+//         bottom: 0;
+//         background-color: #F0EFE9;
+//         z-index: -1;
+//     }
+
+//     .container {
+        
+//         .why-choose-us {
+
+//             .section-title {
+//                 padding-bottom: 40px;
+//                 text-align: center;
+//             }
+
+//             .feature-items {
+                
+//                 .feature-item {
+//                     display: flex;
+//                     align-items: center;
+//                     padding-bottom: 25px;
+//                     text-decoration: none;
+//                     color: #191919;
+
+//                     &:hover {
+//                         text-decoration: underline;
+//                         cursor: pointer;
+//                     }
+
+//                     img {
+//                         margin-right: 20px;
+//                         margin-bottom: 25px; 
+//                         border: 1px solid #ccc;     
+//                         border-radius: 50%;
+//                         padding: 12px;
+//                     }
+//                 }
+//             }
+//         }
+
+//         .img {
+//             display: flex;
+//             justify-content: center;
+            
+//             img {
+//                 max-width: 80%;
+//                 height: auto;
+//                 padding-top: 20px;
+//             }
+//         }
+//     }
+// }
+
+// @media (min-width: 768px) {
+//     .why-us {
+
+//         .background-field {
+//             height: 270px;      
+//         }
+
+//         .container {   
+
+//             .feature-items {
+//                 display: grid;
+//                 grid-template-columns: 1fr 1fr;
+//             }  
+//         }
+//     }
+// }
+
+// @media (min-width: 992px) {
+//     .why-us {
+
+//         .background-field {
+//             height: 320px;
+//         }
+//     }
+// }
+
+// @media (min-width: 1200px) {
+//     .why-us {
+
+//         .background-field {
+//             width: 58%;
+//             right: 0;
+//             height: 430px;
+//         }
+
+//         .container {
+//             display: flex;
+//             justify-content: space-between;
+            
+//             .why-choose-us {
+//                 width: 37%;
+//                 margin-right: 70px;
+
+//                 .section-title {
+//                     text-align: left;
+                 
+//                     h2 {
+//                         width: 90%;
+//                     }
+//                 }
+
+//                 .feature-items {
+//                     display: flex;
+//                     flex-direction: column;
+                    
+//                     .feature-item {
+
+//                         img {
+//                             margin-right: 25px;
+//                         }
+//                     }
+
+//                     .text-bottom {
+//                         padding-bottom: 0;
+
+//                         p {
+//                             margin-bottom: 0;
+//                         }
+//                     }
+//                 }
+//             }
+
+//             .img {
+//                 width: 59%;
+                
+//                 img {
+//                     max-width: 100%;
+//                     height: auto;
+//                     padding-bottom: 100px;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media (min-width: 1400px) {
+//     .why-us {
+        
+//         .background-field {
+//             height: 430px;
+//             width: 57%;
+//         }
+
+//         .container {
+
+//             .why-choose-us {
+//                 margin-right: 150px;
+
+//                 .section-title {
+
+//                     h2 {
+//                         margin-top: 30px;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }

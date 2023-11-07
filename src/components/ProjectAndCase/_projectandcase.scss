@@ -1,0 +1,100 @@
+// .project-and-case {
+//     padding-top: 60px;
+//     padding-bottom: 60px;
+
+//     .container {
+
+//         .section-title {
+//             text-align: center;
+//             padding-bottom: 40px;
+//         }
+
+//         .project-and-cases {
+            
+//             .project {
+//                 color: #191919;
+//                 text-decoration: none;
+
+//                 img {
+//                     width: 100%;
+//                     height: auto;
+//                 }
+
+//                 h3 {
+//                     border-bottom: 1px solid #DAD9D3;
+//                     padding-top: 35px;
+//                     padding-bottom: 16px;
+//                 }
+
+//                 .readmore {
+//                     padding: 15px;
+//                     display: block;
+//                     text-align: right;
+//                     font-family: 'Inter', sans-serif;
+//                     font-size: 14px;
+//                     font-weight: 500;
+//                     text-decoration: none;
+//                     color: #191919;
+
+//                     i {
+//                         margin-left: 3px;
+//                     }
+//                 }
+
+//                 &:hover .readmore {
+//                     text-decoration: underline;
+//                 }
+//             }
+//         }
+
+//         .center-content {
+//             margin-top: 50px;
+//         }
+//     }
+// }
+
+// @media (min-width: 768px) {
+//     .project-and-case {
+
+//         .project-and-cases {
+//             display: grid;
+//             grid-template-columns: 1fr 1fr;
+//             gap: 30px;
+
+//             .project {
+//                 display: grid;
+//                 grid-template-rows: auto 1fr auto;
+//             }
+//         }
+//     }
+// }
+
+// @media (min-width: 992px) {
+//     .project-and-case {
+//         padding: 90px 0;
+
+//         .container {
+
+//             .section-title {
+//                 padding-bottom: 70px;
+//             }
+//         }
+//     }
+// }
+
+// @media (min-width: 1200px) {
+//     .project-and-case {
+//         padding-top: 120px;
+
+//         .container {
+
+//             .section-title {
+//                 padding-bottom: 90px;
+//             }
+//         }
+//     }
+// }
+
+// @media (min-width: 1400px) {
+    
+// }

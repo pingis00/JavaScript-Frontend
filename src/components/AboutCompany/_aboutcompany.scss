@@ -1,0 +1,181 @@
+// .about-company {
+//     padding-top: 60px;
+//     padding-bottom: 60px;
+
+//     .container {
+
+//         .about-company-image {
+//             position: relative;
+
+//             .founder-image {
+//                 display: block;
+//                 margin-left: auto;
+//                 margin-right: auto;
+//             }
+
+//             .wavy-lines {
+//                 position: absolute;
+//                 top: 30px;
+//                 left: -35px
+//             }
+
+//             .founder-info {
+//                 position: absolute;
+//                 bottom: 40px;
+//                 left: 0;
+//                 height: 180px;
+//                 width: 360px;
+//                 background-color: rgb(190, 235, 255);
+//                 padding-top: 30px;
+//                 padding-left: 20px;
+
+//                 h4 {
+//                     font-family: 'Dm Sans', sans-serif;
+//                     font-size: 20px;
+//                     font-weight: 700;
+//                     margin-bottom: 25px;
+
+//                     span {
+//                         color: #F94D1C;
+//                         font-size: 16px;
+//                     }
+//                 }
+//             }
+//         }
+
+//         .section-title {
+//             padding-top: 40px;
+//             text-align: center;
+
+//             h2 {
+//                 margin-top: 30px;
+//                 margin-bottom: 35px;
+//             }
+
+//             .company-info {
+//                 color: #191919;
+//                 font-size: 16px;
+//             }
+
+//             .intro-buttons {
+//                 margin-top: 60px;
+//                 display: flex;
+
+//                 .btn-intro {
+//                     margin-left: 20px;
+//                     display: flex;
+//                     align-items: center;
+//                     text-decoration: none;
+//                     color: #191919;
+//                     font-weight: 600;
+//                     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+//                     border-radius: 25px;
+//                     padding: 0 10px;
+                    
+//                     &:hover {
+//                         background-color: black;
+//                         color: white;
+//                         border-radius: 25px;
+//                         box-shadow: 6px 6px 5px 2px #aeacac;
+//                     }
+                    
+//                     i {
+//                         margin-right: 19px;
+//                         font-size: 3rem;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media (min-width: 768px) {
+//     .about-company {
+
+//         .container {
+
+//             .about-company-image {
+
+//                 .wavy-lines {
+//                     left: 45px;
+//                 }
+
+//                 .founder-info {
+//                     left: 32px;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media (min-width: 992px) {
+//     .about-company {
+//         padding: 90px 0;
+
+//         .container {
+//             display: flex;
+
+//             .about-company-image {
+
+//                 .wavy-lines {
+//                     left: -35px;
+//                 }
+
+//                 .founder-info {
+//                     left: 0;
+//                 }
+//             }
+
+//             .section-title {
+//                 padding-top: 0;
+//                 margin-left: 35px;
+//                 text-align: left;
+//             }
+//         }
+//     }   
+// }
+
+// @media (min-width: 1200px) {
+//     .about-company {
+//         padding-top: 120px;
+//         padding-bottom: 120px;
+        
+//         .container {
+
+//             .about-company-image {
+
+//                 .wavy-lines {
+//                     left: 20px;
+//                 }
+
+//                 .founder-image {
+//                     margin-left: 55px;
+//                 }
+//             }
+
+//             .section-title {
+//                 width: 40%;
+//                 margin-left: 70px;
+
+//                 .intro-buttons {
+//                     margin-top: 120px;
+//                     justify-content: left;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media (min-width: 1400px) {
+//     .about-company {
+
+//         .container {
+
+//             .section-title {
+//                 margin-left: 190px;
+
+
+//             }
+//         }
+//     }
+// }

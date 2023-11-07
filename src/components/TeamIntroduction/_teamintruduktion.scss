@@ -1,0 +1,97 @@
+// .team-introduction {
+//     background-color: rgb(237,207,134);
+//     padding-top: 60px;
+//     padding-bottom: 60px;
+
+//     .container {
+
+//         .meet-our-team {
+//             display: flex;
+//             justify-content: space-between;
+//             margin-bottom: 50px; 
+
+//             .btn-yellow {
+//                 align-self: end;
+//                 text-align: center;
+//                 width: 225px;
+//                 height: auto;
+//                 border: 1px solid #191919;
+//                 border-radius: 35px;
+
+//                 &:hover {
+//                     box-shadow: 6px 6px 5px 2px #a68636;
+//                 }
+//             }   
+//         }
+
+//         .team-members {
+//             display: grid;
+//             grid-template-columns: 1fr 1fr;
+//             column-gap: 15px;
+
+//             img {
+//                 width: 100%;
+//                 height: auto;
+//             }
+
+//             h3 {
+//                 font-size: 19px;
+//                 padding-top: 10px;
+//                 margin-bottom: 0;
+//             }
+//         }
+//     }
+// }
+
+// @media (min-width: 768px) {
+//     .team-introduction {
+
+//         .container {
+
+//             .meet-our-team {
+
+//                 i {
+//                     margin-left: 30px;
+//                 }
+//             }
+
+//             .team-members {
+//                 grid-template-columns: 1fr 1fr 1fr 1fr;
+//             }
+//         }
+//     }
+// }
+
+// @media (min-width: 992px) {
+//     .team-introduction {
+//         padding-top: 120px;
+//         padding-bottom: 70px;
+
+//         .container {
+
+//             .meet-our-team {
+//                 margin-bottom: 90px;
+//             }
+
+//             .team-members {
+
+//                 .team-member {
+
+//                     h3 {
+//                         font-size: 22px;
+//                         padding-top: 35px;
+//                         padding-bottom: 10px;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media (min-width: 1200px) {
+    
+// }
+
+// @media (min-width: 1400px) {
+    
+// }

@@ -1,0 +1,127 @@
+// .testimonial {
+//     background-color: rgb(237,207,134);
+//     padding-bottom: 60px;
+//     display: flex;
+//     justify-content: center;
+
+//     .background {
+//         background-color: white;
+//         padding-top: 50px;
+//         padding-bottom: 50px;
+//         margin-right: 50px;
+//         margin-left: 50px;
+//         max-width: 1520px;
+//         width: 100%;
+//         height: auto;
+
+//         .container {
+
+//             .section-title {
+//                 text-align: center;
+//                 padding-bottom: 20px;
+//             } 
+        
+//             .stars {
+//                 margin-bottom: 10px;
+//             } 
+    
+//             p {
+//                 line-height: 2;
+//                 font-size: 18px;
+//             }
+    
+//             .client-name {
+//                 display: flex;
+//                 align-items: center;
+//                 margin-bottom: 20px;
+    
+//                 img {
+//                     margin-right: 20px;
+//                     margin-bottom: 25px;
+//                 }
+    
+//                 p {
+//                     color: #F94D1C;
+//                     font-size: 16px;
+//                     font-weight: 400;
+//                 }
+//             }
+//         } 
+    
+//         .btn-black {
+//             padding: 18px 30px;
+//             border-radius: 40px;
+//         }
+//     }
+// }
+
+// @media (min-width: 768px) {
+
+// }
+
+// @media (min-width: 992px) {
+    
+// }
+
+// @media (min-width: 1200px) {
+//     .testimonial {
+//         padding-bottom: 120px;
+
+//         .background {
+//             padding-top: 120px;
+//             padding-bottom: 120px;
+
+//             .container {
+
+//                 .section-title {
+//                     padding-bottom: 90px;
+//                 }
+    
+//                 .clients {
+//                     display: grid;
+//                     grid-template-columns: 1fr 1fr 1fr;
+    
+//                     .client {
+//                         margin-left: 30px;
+//                         margin-right: 10px;
+    
+//                         .stars {
+//                             margin-bottom: 30px;
+//                         }
+    
+//                         p {
+//                             margin-bottom: 30px;
+//                         }
+//                     }
+//                 }
+//             } 
+            
+//             .center-content {
+//                 margin-top: 90px;
+                
+//                 .btn-black {
+//                     width: 180px;
+//                     text-align: center;
+//                 }
+//             }
+//         }   
+//     } 
+// }
+
+// @media (min-width: 1400px) {
+//     .testimonial {
+
+//         .background {
+
+//             .container {
+
+//                 .clients {
+                    
+//                     .client {
+//                         margin-right: 50px;
+//                     }
+//                 }
+//             }
+//         }
+//     } 
+// }
