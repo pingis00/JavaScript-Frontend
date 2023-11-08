@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from '../components/Header/Header'
 import Showcase from '../components/Showcase/Showcase'
-import Logos from '../components/Logos/Logos'
+import LogosSection from '../components/Logos/LogosSection'
 import Features from '../components/Features/Features'
 import AboutCompany from '../components/AboutCompany/AboutCompany'
 import OurServices from '../components/OurServices/OurServices'
@@ -14,12 +14,14 @@ import Newsletter from '../components/Newsletter/Newsletter'
 import Brandsummary from '../components/BrandSummary/Brandsummary'
 import Footer from '../components/Footer/Footer'
 
+
+
 const Home = () => {
     return (
         <div className='wrapper-grid'>
             <Header />
             <Showcase />
-            <Logos />
+            <LogosSection />
             <Features />
             <AboutCompany />
             <OurServices />

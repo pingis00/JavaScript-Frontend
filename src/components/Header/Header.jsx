@@ -1,7 +1,8 @@
 import React from 'react'
-import Logo from '@images/Logo.svg'
-import Buttons from '../generics/Buttons'
 import { NavLink, Link } from 'react-router-dom'
+import Buttons from '@generics/Buttons'
+import SocialMediaIcons from '@generics/SocialMediaIcons'
+import Logo from '@images/Logo.svg'
 
 const Header = () => {
     return (
@@ -27,12 +28,7 @@ const Header = () => {
                         Sveavägen 31, 111 34 STOCKHOLM
                     </div>
                 </div>
-                <div className="socialmedia-bar">
-                    <a href="https://facebook.com" target="blank"><i className="fa-brands fa-facebook"></i></a>
-                    <a href="https://twitter.com" target="blank"><i className="fa-brands fa-x-twitter"></i></a>
-                    <a href="https://instagram.com" target="blank"><i className="fa-brands fa-instagram"></i></a>
-                    <a href="https://linkedin.com" target="blank"><i className="fa-brands fa-linkedin"></i></a>
-                </div>
+                    <SocialMediaIcons className="socialmedia-bar" />
                 <div className="menu">
                     <nav>
                         <NavLink to="/">Home</NavLink>
@@ -40,7 +36,7 @@ const Header = () => {
                         <NavLink to="/news">News</NavLink>
                         <NavLink to="/contact">Contact</NavLink>
                     </nav>
-                    <Buttons title="Login" url="/login" />
+                    <Buttons title="Login" url="/login" className="btn-login" />
                 </div>
             </div>
         </header>
@@ -48,4 +44,3 @@ const Header = () => {
 }
 
 export default Header
-

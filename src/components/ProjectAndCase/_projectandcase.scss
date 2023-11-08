@@ -1,100 +1,96 @@
-// .project-and-case {
-//     padding-top: 60px;
-//     padding-bottom: 60px;
+.project-and-case {
+    padding-top: 60px;
+    padding-bottom: 60px;
 
-//     .container {
+    .container {
 
-//         .section-title {
-//             text-align: center;
-//             padding-bottom: 40px;
-//         }
+        .section-title {
+            text-align: center;
+            padding-bottom: 40px;
+        }
 
-//         .project-and-cases {
+        .project-and-cases {
             
-//             .project {
-//                 color: #191919;
-//                 text-decoration: none;
+            .project {
+                color: #191919;
+                text-decoration: none;
 
-//                 img {
-//                     width: 100%;
-//                     height: auto;
-//                 }
+                img {
+                    width: 100%;
+                    height: auto;
+                }
 
-//                 h3 {
-//                     border-bottom: 1px solid #DAD9D3;
-//                     padding-top: 35px;
-//                     padding-bottom: 16px;
-//                 }
+                h3 {
+                    border-bottom: 1px solid #DAD9D3;
+                    padding-top: 35px;
+                    padding-bottom: 16px;
+                }
 
-//                 .readmore {
-//                     padding: 15px;
-//                     display: block;
-//                     text-align: right;
-//                     font-family: 'Inter', sans-serif;
-//                     font-size: 14px;
-//                     font-weight: 500;
-//                     text-decoration: none;
-//                     color: #191919;
+                .readmore {
+                    padding: 15px;
+                    display: block;
+                    text-align: right;
+                    font-family: 'Inter', sans-serif;
+                    font-size: 14px;
+                    font-weight: 500;
+                    text-decoration: none;
+                    color: #191919;
 
-//                     i {
-//                         margin-left: 3px;
-//                     }
-//                 }
+                    i {
+                        margin-left: 3px;
+                    }
+                }
 
-//                 &:hover .readmore {
-//                     text-decoration: underline;
-//                 }
-//             }
-//         }
+                &:hover .readmore {
+                    text-decoration: underline;
+                }
+            }
+        }
 
-//         .center-content {
-//             margin-top: 50px;
-//         }
-//     }
-// }
+        .center-content {
+            margin-top: 50px;
+        }
+    }
+}
 
-// @media (min-width: 768px) {
-//     .project-and-case {
+@media (min-width: 768px) {
+    .project-and-case {
 
-//         .project-and-cases {
-//             display: grid;
-//             grid-template-columns: 1fr 1fr;
-//             gap: 30px;
+        .project-and-cases {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
 
-//             .project {
-//                 display: grid;
-//                 grid-template-rows: auto 1fr auto;
-//             }
-//         }
-//     }
-// }
+            .project {
+                display: grid;
+                grid-template-rows: auto 1fr auto;
+            }
+        }
+    }
+}
 
-// @media (min-width: 992px) {
-//     .project-and-case {
-//         padding: 90px 0;
+@media (min-width: 992px) {
+    .project-and-case {
+        padding: 90px 0;
 
-//         .container {
+        .container {
 
-//             .section-title {
-//                 padding-bottom: 70px;
-//             }
-//         }
-//     }
-// }
+            .section-title {
+                padding-bottom: 70px;
+            }
+        }
+    }
+}
 
-// @media (min-width: 1200px) {
-//     .project-and-case {
-//         padding-top: 120px;
+@media (min-width: 1200px) {
+    .project-and-case {
+        padding-top: 120px;
 
-//         .container {
+        .container {
 
-//             .section-title {
-//                 padding-bottom: 90px;
-//             }
-//         }
-//     }
-// }
-
-// @media (min-width: 1400px) {
-    
-// }
+            .section-title {
+                padding-bottom: 90px;
+            }
+        }
+    }
+}

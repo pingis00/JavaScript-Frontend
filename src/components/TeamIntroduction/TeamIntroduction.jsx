@@ -1,14 +1,24 @@
 import React from 'react'
-import Kristine from '@images/img-Kristine.png'
-import Mark from '@images/img-mark.png'
-import Kimberly from '@images/img-Kimberly.png'
-import Justin from '@images/img-justin.png'
+import SectionTitle from '@generics/SectionTitle'
+import Buttons from '@generics/Buttons'
+import Dots from '@generics/Dots'
+import TeamMembers from './TeamMembers'
+
 
 const TeamIntroduction = () => {
     return (
-        <>
-
-        </>
+        <section className="team-introduction">
+            <div className="container">
+                <div className="meet-our-team">
+                    <SectionTitle title="Meet Our Team" headline="Experience Team Members" />
+                    <Buttons url="/browseteam" title="Browse Team" />                   
+                </div>
+                <div className="team-members">
+                    <TeamMembers />
+                </div>
+                <Dots count={5} />
+            </div>  
+        </section>
     )
 }
 

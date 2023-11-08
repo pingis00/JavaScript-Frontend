@@ -1,0 +1,22 @@
+.section-title {
+
+    color: #F94D1C;
+    font-size: 18px;
+    margin-bottom: 10px;
+    
+
+    h2 {
+        color: #191919;
+        font-family: 'Dm Sans', sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+
+        @media (min-width: 768px) {
+            font-size: 40px;
+        }
+
+        @media (min-width: 1400px) {
+            font-size: 45px;
+        }
+    }
+}

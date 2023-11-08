@@ -1,14 +1,22 @@
 import React from 'react'
-import ArticleImage1 from '@images/article-image-1.png'
-import ArticleImage2 from '@images/article-image-2.png'
-import ArticleImage3 from '@images/article-image-3.png'
-import ArticleImage4 from '@images/article-image-4.png'
+import Buttons from '@generics/Buttons'
+import ProjectAndCases from './ProjectAndCases'
+
 
 const ProjectAndCase = () => {
     return (
-        <>
-
-        </>
+        <section className="project-and-case">
+            <div className="container">
+                <div className="section-title">
+                    <p>Project & Case Studies</p>
+                    <h2>Let’s Looks Our Global Projects</h2>
+                </div>
+                    <ProjectAndCases />
+                <div className="center-content">
+                    <Buttons type="black" url="/allrecentprojects" title="All Recent Projects" />
+                </div>
+            </div>
+        </section>
     )
 }
 

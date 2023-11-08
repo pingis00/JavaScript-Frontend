@@ -1,15 +1,19 @@
 import React from 'react'
-import GreyPlus from '@images/grey-plus.svg'
-import hand from '@images/icon-hand.svg'
-import lamp from '@images/icon-lamp.svg'
-import chart from '@images/icon-chart.svg'
-import box from '@images/icon-box.svg'
+import SectionTitle from '@generics/SectionTitle'
+import Buttons from '@generics/Buttons'
+import FeatureItem from './FeatureItem'
 
 const Features = () => {
     return (
-        <>
-
-        </>
+        <section className="features">
+            <div className="container">
+                <div className='intro'>
+                    <SectionTitle title="features" headline="Our Accunting is trusted by thousand of companies" />
+                    <Buttons title="Learn More" url="/learnmore" className="btn" />
+                </div>
+                <FeatureItem />
+            </div>
+        </section>
     )
 }
 

@@ -9,7 +9,7 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData: '@import "./src/assets/SCSS/index.scss";',
+        additionalData: '@import ".src/assets/SCSS/index.scss";',
       },
     },
   },
@@ -17,6 +17,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '@images': path.resolve(__dirname, 'src/assets/images'),
+      '@generics': path.resolve(__dirname, 'src/components/generics'),
     },
   },
 });

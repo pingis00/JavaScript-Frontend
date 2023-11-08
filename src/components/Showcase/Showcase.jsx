@@ -1,7 +1,7 @@
 import React from 'react'
 import backgroundlines from '@images/background-lines.svg'
 import image from '@images/image.svg'
-import Buttons from '../generics/Buttons'
+import Buttons from '@generics/Buttons'
 
 const Showcase = () => {
     return (

@@ -24,10 +24,6 @@ header {
             display: none;
         }
 
-        .socialmedia-bar {
-            display: none;
-        }
-
         .menu {
             display: none;
         }
@@ -45,26 +41,6 @@ header {
             .btn-menubars {
                 display: none;
             }  
-            
-            .socialmedia-bar {
-                grid-area: social;
-                display: block;
-                
-                a {
-                    color: #191919;
-                    margin-left: 10px;
-
-                    i {
-                        font-size: 1.3rem;
-                        transition: transform 0.15s ease-in-out, color 0.15s ease-in-out;
-
-                        &:hover {
-                            color: #7c7c7c;
-                            transform: scale(1.2);
-                        }
-                    }  
-                }
-            }
     
             .menu {
                 grid-area: menu;

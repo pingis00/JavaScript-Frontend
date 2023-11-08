@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import BackgroundlinesWhite from '@images/background-lines-white.svg'
 import ServiceBox from './ServiceBox'
-import SectionTitle from '../generics/SectionTitle'
-import Buttons from '../generics/Buttons'
+import SectionTitle from '@generics/SectionTitle'
+import Buttons from '@generics/Buttons'
+import BackgroundlinesWhite from '@images/background-lines-white.svg'
 
 const OurServices = () => {
 

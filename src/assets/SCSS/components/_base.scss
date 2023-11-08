@@ -12,101 +12,6 @@ html, body {
     grid-template-rows: auto 1fr auto;
 }
 
-.btn-yellow {
-    background-color: #F9D783;
-    border: 1px solid #F9D783;
-    color: #191919;
-    text-decoration: none;
-    padding: 15px 30px;
-    font-weight: 600;
-    font-size: 16px;
-    border-radius: 25px;
-    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-
-    &:hover {
-        background-color: #191919;
-        border: 1px solid #191919;
-        color: rgb(227, 223, 223);
-        box-shadow: 6px 6px 5px 2px #aeacac;
-    }
-
-    i {
-        margin-left: 8px;
-        font-size: 0.9em;
-    }
-}
-
-.btn-black {
-    background-color: #191919;
-    border: 1px solid #191919;;
-    color: #FFFFFF;
-    text-decoration: none;
-    padding: 15px 30px;
-    font-weight: 600;
-    font-size: 16px;
-    border-radius: 25px;
-    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-
-    &:hover {
-        background-color: #FFFFFF;
-        border: 1px solid #191919;
-        color: #191919;
-        box-shadow: 6px 6px 5px 2px #dcd7d7;
-    }
-
-    i {
-        margin-left: 8px;
-        font-size: 0.9em;
-    }
-}
-
-.btn-transparent {
-    background-color: transparent;
-    border: 1px solid #191919;
-    color:#191919;
-    text-decoration: none;
-    padding: 15px 30px;
-    font-weight: 600;
-    font-size: 16px;
-    border-radius: 25px;
-    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-
-    &:hover {
-        background-color: #191919;
-        border: 1px solid #191919;
-        color: rgb(227, 223, 223);
-        box-shadow: 6px 6px 5px 2px #aeacac;
-    }
-
-    i {
-        margin-left: 8px;
-        font-size: 0.9em;
-    }
-}
-
-.section-title {
-
-    color: #F94D1C;
-    font-size: 18px;
-    margin-bottom: 10px;
-    
-
-    h2 {
-        color: #191919;
-        font-family: 'Dm Sans', sans-serif;
-        font-size: 30px;
-        font-weight: 700;
-
-        @media (min-width: 768px) {
-            font-size: 40px;
-        }
-
-        @media (min-width: 1400px) {
-            font-size: 45px;
-        }
-    }
-}
-
 h3 {
     font-family: 'DM Sans', sans-serif;
     font-weight: 700;
@@ -128,13 +33,13 @@ h3 {
         background-color: rgb(190,170,111);
         border-radius: 50%;
         display: inline-block;
-        margin-right: 10px; 
+        margin-right: 12px; 
+        transition: background-color 0.2s ease-in-out;
 
         @media (min-width: 992px) {
             margin-top: 50px;
         }
 
-        &.active,
         &:hover {
             background-color: black;
             cursor: pointer;
