@@ -1,0 +1,16 @@
+.map {
+    background-color: #0E1021;
+
+    iframe {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .map {
+
+        iframe {
+            height: 620px;
+        }
+    }
+}

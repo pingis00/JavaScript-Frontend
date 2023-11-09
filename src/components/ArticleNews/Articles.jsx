@@ -22,7 +22,7 @@ const articleList = [
 const Articles = () => {
     return (
         articleList.map((article, index) => (
-            <article>
+            <article key={index}>
                 <Link to={article.linkTo}>
                     <img src={article.img} alt={article.alt} />
                     <p>{article.title}</p>

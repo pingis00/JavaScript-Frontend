@@ -15,7 +15,7 @@ const membersList = [
 const TeamMembers = () => {
     return (
         membersList.map((member, index) => (
-            <div className="team-member">
+            <div key={index} className="team-member">
                 <img src={member.img} alt={member.alt} />
                 <h3>{member.name}</h3>
                 <p>{member.occupation}</p>

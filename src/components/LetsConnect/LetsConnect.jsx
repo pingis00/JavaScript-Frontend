@@ -4,9 +4,9 @@ import BackgroundLines from '@images/background-lines.svg'
 
 const LetsConnect = () => {
     return (
-        <section class="lets-connect">
-            <img class="background-lines" src={BackgroundLines} alt="two white wavy lines"/>
-            <div class="container">
+        <section className="lets-connect">
+            <img className="background-lines" src={BackgroundLines} alt="two white wavy lines"/>
+            <div className="container">
                 <nav>
                     <Link to="/">Home</Link>
                     <Link to="/contact">Contact</Link>

@@ -16,7 +16,7 @@ const whyUsList = [
 const WhyUsFeatures = () => {
     return (
         whyUsList.map ((feature, index) => (
-            <Link key={index} to={feature.linkTo} class="why-us-feature-item">
+            <Link key={index} to={feature.linkTo} className="why-us-feature-item">
             <img src={feature.img} alt={feature.alt} />
             <div>
                 <h3>{feature.title}</h3>

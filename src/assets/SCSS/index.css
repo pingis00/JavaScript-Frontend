@@ -1345,18 +1345,37 @@ footer .container p {
   text-align: center;
   margin-bottom: 20px;
 }
-.contact-and-message .container .message-information #message .form-input {
+.contact-and-message .container .message-information form span {
+  padding-left: 30px;
+}
+.contact-and-message .container .message-information form .form-input {
   margin-bottom: 15px;
-  width: 100%;
-  padding: 15px 30px;
   font-size: 16px;
+}
+.contact-and-message .container .message-information form .form-input input {
+  width: 100%;
   border-radius: 25px;
+  padding: 15px 30px;
   border: none;
 }
-.contact-and-message .container .message-information #message #your-message {
+.contact-and-message .container .message-information form .form-input textarea {
+  width: 100%;
   resize: none;
-  margin-bottom: 40px;
   border-radius: 30px;
+  padding: 15px 30px;
+  border: none;
+}
+.contact-and-message .container .message-information form .form-input .btn-yellow {
+  width: 100%;
+  margin-top: 40px;
+}
+.contact-and-message .container .message-information form .error {
+  color: red;
+  text-align: center;
+}
+.contact-and-message .container .message-information form .success {
+  color: green;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -1417,5 +1436,17 @@ footer .container p {
     margin-top: -10px;
     height: 60px;
     width: 60px;
+  }
+}
+.map {
+  background-color: #0E1021;
+}
+.map iframe {
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  .map iframe {
+    height: 620px;
   }
 }

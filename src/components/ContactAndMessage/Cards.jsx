@@ -12,7 +12,7 @@ const cardList = [
 const Cards = () => {
     return ( 
         cardList.map((card, index) => (
-            <div className="card">
+            <div key={index} className="card">
                 <img src={card.img} alt={card.alt} />
                 <div className="card-content">
                     <h3>{card.title}</h3>

@@ -17,7 +17,7 @@ const ProjectAndCases = () => {
         <div className="project-and-cases">
             {
                 projectList.map((project, index) => (
-                    <Link className="project" to={project.linkTo}>
+                    <Link key={index} className="project" to={project.linkTo}>
                     <img src={project.img} alt={project.alt} />
                     <h3>{project.title}</h3>
                     <div className="readmore">Read More <i className="fa-regular fa-arrow-up-right"></i></div>
