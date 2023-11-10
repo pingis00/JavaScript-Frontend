@@ -1,0 +1,192 @@
+.article-and-news {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    .container {
+
+        h2 {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        } 
+
+        .articles {
+
+            .article {
+
+                .images {
+                    position: relative;
+                    
+                    img {
+                        height: 300px;
+                        width: 100%;
+                        padding-top: 30px;
+                    }
+
+                    .date {
+                        position: absolute;
+                        top: 46px;
+                        left: 16px;
+                        background-color: #F9D783;
+                        height: 64px;
+                        width: 56px;
+                        text-align: center;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+
+                        .day {
+                            font-family: 'DM Sans', sans-serif;
+                            font-weight: 700;
+                            font-size: 22px;
+                            line-height: 1;
+                        }
+                        .month {
+                            line-height: 1;
+                        }
+                    }
+                }
+
+                h3 {
+                    margin-top: 30px;
+                }
+
+                .text {
+                    margin-top: 25px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .article-and-news {
+
+        .container {
+
+            h2 {
+                margin-bottom: 0;
+            }
+
+            .articles {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                column-gap: 20px;
+
+                .article {
+
+                    .images {
+                        
+                        img {
+                            height: 150px;
+                        }
+
+                        .date {
+                            height: 35px;
+                            width: 30px;
+                            top: 35px;
+                            left: 6px;
+
+                            .day {
+                                font-size: 16px;
+
+                            }
+                            .month {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+
+                    h3 {
+                        margin-top: 15px;
+                    }
+
+                    .text {
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+
+    .article-and-news {
+        padding-top: 120px;
+        padding-bottom: 90px;
+
+        .container {
+
+            .articles {
+                column-gap: 30px;
+
+                .article {
+
+                    .images {
+
+                        img {
+                            height: 200px;
+                        }
+
+                        .date {
+                            height: 50px;
+                            width: 42px;
+                            top: 40px;
+                            left: 10px;
+
+                            .day {
+                                font-size: 20px;
+
+                            }
+                            .month {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .article-and-news {
+        padding-top: 120px;
+        padding-bottom: 90px;
+
+        .container {
+
+            .articles {
+                column-gap: 40px;
+
+                .article {
+
+                    .images {
+
+                        img {
+                            height: 250px;
+                            max-width: 420px;
+                        }
+
+                        .date {
+                            height: 50px;
+                            width: 42px;
+                            top: 40px;
+                            left: 10px;
+
+                            .day {
+                                font-size: 20px;
+
+                            }
+                            .month {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -52,10 +52,6 @@
 
         .container {
 
-            .btn-article {
-                
-            }
-
             .news {
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
@@ -125,25 +121,6 @@
 
                 h3 {
                     width: 80%;
-                }
-            }
-        }
-    }
-}
-
-@media (min-width: 1400px) {
-    .article-news {
-
-        .container {
-
-            .news {
-
-                .h3-1 {
-                    width: 70%;
-                }
-
-                h3 {
-                    width: 74%;
                 }
             }
         }
