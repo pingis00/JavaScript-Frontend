@@ -92,6 +92,24 @@
         }
     
         .side-section {
+            font-family: 'DM Sans', sans-serif;
+
+            h3 {
+                position: relative;
+                display: inline-block;
+                font-size: 22px;
+                margin-bottom: 20px;
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 45px;
+                    height: 2px;
+                    background-color: #191919;
+                }
+            }
             
             ul {
                 list-style-type: none;
@@ -104,35 +122,53 @@
                 text-decoration: none;
             }
 
-            .search {
-                
+            .search-bar {
+                padding-top: 50px;
+                padding-bottom: 30px;
+                position: relative;
+
+                input {  
+                    background-color: #F3F3F3;
+                    width: 100%;
+                    padding: 20px 70px;
+                    border: none;
+                    border-radius: 50px;
+                }
+
+                i {
+                    position: absolute;
+                    top: 50%;
+                    left: 35px;
+                }
             }
     
             .recent-posts {
-                padding-top: 30px;
-                padding-bottom: 30px;
-
-                h3 {
-                    font-family: 'DM Sans', sans-serif;
-                    font-size: 22px;
-                    margin-bottom: 20px;
-                }
+                border: 1px solid rgb(231, 231, 231);
+                padding-top: 50px;
+                padding-left: 40px;
+                padding-bottom: 40px;
+                padding-right: 40px;
                 
                 .posts {
 
                     .list-post {
 
-
                         .post {
 
+                            &:hover {
+                                text-decoration: underline;
+                            }
+
                             h5 {
-                                font-family: 'DM Sans', sans-serif;
                                 font-size: 16px;
                                 font-weight: 700;
                             }
 
                             p {
                                 font-size: 14px;
+                                padding-bottom: 10px;
+                                border-bottom: 2px solid rgb(242, 242, 242);
+                                font-family: 'Inter', sans-serif;
                             }
                         }
                     }
@@ -140,20 +176,29 @@
             }
     
             .categories {
+                border: 1px solid rgb(231, 231, 231);
+                margin-top: 40px;
+                padding-top: 50px;
+                padding-left: 40px;
+                padding-bottom: 40px;
 
                 .list {
 
-                    h3 {
-                        font-size: 22px;
-                    }
-
                     .links {
+                        &:hover {
+                            text-decoration: underline;
+                        }
 
                         .items {
                             display: flex;
+                            font-weight: 700;
+
+
 
                             p {
                                 margin-right: 8px;
+
+
                             }
 
                             span {

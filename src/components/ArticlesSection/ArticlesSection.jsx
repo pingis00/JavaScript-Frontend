@@ -55,7 +55,9 @@ const Articles = () => {
                             </div>
                         </section>
                         <section className='side-section'>
-                            <div className='search'>
+                            <div className='search-bar'>
+                                <input  type="text" placeholder='Type to search...' />
+                                <i class="fa-regular fa-magnifying-glass"></i>
                             </div>
                             <div className='recent-posts'>
                                 <h3>Recent Posts</h3>

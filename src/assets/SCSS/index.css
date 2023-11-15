@@ -1506,22 +1506,28 @@ footer .container p {
   font-weight: 700;
   margin-bottom: 20px;
 }
+.article-and-news .container .articles .article {
+  flex: 1;
+  overflow: hidden;
+}
 .article-and-news .container .articles .article a {
   text-decoration: none;
   color: #191919;
 }
-.article-and-news .container .articles .article a:hover h3, .article-and-news .container .articles .article a:hover .text {
+.article-and-news .container .articles .article a:hover .article-title, .article-and-news .container .articles .article a:hover .article-content {
   text-decoration: underline;
 }
-.article-and-news .container .articles .article .images {
+.article-and-news .container .articles .article .article-images {
   position: relative;
+  height: 230px;
 }
-.article-and-news .container .articles .article .images img {
-  height: 300px;
+.article-and-news .container .articles .article .article-images img {
   width: 100%;
-  padding-top: 30px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-.article-and-news .container .articles .article .images .date {
+.article-and-news .container .articles .article .article-images .article-date {
   position: absolute;
   top: 46px;
   left: 16px;
@@ -1533,22 +1539,18 @@ footer .container p {
   flex-direction: column;
   justify-content: center;
 }
-.article-and-news .container .articles .article .images .date .day {
+.article-and-news .container .articles .article .article-images .article-date .day {
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
   font-size: 22px;
   line-height: 1;
 }
-.article-and-news .container .articles .article .images .date .month {
+.article-and-news .container .articles .article .article-images .article-date .month {
   line-height: 1;
 }
-.article-and-news .container .articles .article h3 {
-  margin-top: 30px;
+.article-and-news .container .articles .article .article-body {
+  padding: 2rem 1rem;
 }
-.article-and-news .container .articles .article .text {
-  margin-top: 25px;
-}
-
 @media (min-width: 768px) {
   .article-and-news .container h2 {
     margin-bottom: 0;
@@ -1559,26 +1561,20 @@ footer .container p {
     -moz-column-gap: 20px;
          column-gap: 20px;
   }
-  .article-and-news .container .articles .article .images img {
-    height: 150px;
-  }
-  .article-and-news .container .articles .article .images .date {
+  .article-and-news .container .articles .article .article-images .article-date {
     height: 35px;
     width: 30px;
     top: 35px;
     left: 6px;
   }
-  .article-and-news .container .articles .article .images .date .day {
+  .article-and-news .container .articles .article .article-images .article-date .day {
     font-size: 16px;
   }
-  .article-and-news .container .articles .article .images .date .month {
+  .article-and-news .container .articles .article .article-images .article-date .month {
     font-size: 12px;
   }
-  .article-and-news .container .articles .article h3 {
-    margin-top: 15px;
-  }
-  .article-and-news .container .articles .article .text {
-    margin-top: 15px;
+  .article-and-news .container .articles .article .article-body {
+    padding-top: 30px;
   }
 }
 @media (min-width: 992px) {
@@ -1590,19 +1586,25 @@ footer .container p {
     -moz-column-gap: 30px;
          column-gap: 30px;
   }
-  .article-and-news .container .articles .article .images img {
-    height: 200px;
+  .article-and-news .container .articles .article .article-images {
+    height: 230px;
   }
-  .article-and-news .container .articles .article .images .date {
+  .article-and-news .container .articles .article .article-images img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .article-and-news .container .articles .article .article-images .article-date {
     height: 50px;
     width: 42px;
     top: 40px;
     left: 10px;
   }
-  .article-and-news .container .articles .article .images .date .day {
+  .article-and-news .container .articles .article .article-images .article-date .day {
     font-size: 20px;
   }
-  .article-and-news .container .articles .article .images .date .month {
+  .article-and-news .container .articles .article .article-images .article-date .month {
     font-size: 14px;
   }
 }
@@ -1615,20 +1617,16 @@ footer .container p {
     -moz-column-gap: 40px;
          column-gap: 40px;
   }
-  .article-and-news .container .articles .article .images img {
-    height: 250px;
-    max-width: 420px;
-  }
-  .article-and-news .container .articles .article .images .date {
+  .article-and-news .container .articles .article .article-images .article-date {
     height: 50px;
     width: 42px;
     top: 40px;
     left: 10px;
   }
-  .article-and-news .container .articles .article .images .date .day {
+  .article-and-news .container .articles .article .article-images .article-date .day {
     font-size: 20px;
   }
-  .article-and-news .container .articles .article .images .date .month {
+  .article-and-news .container .articles .article .article-images .article-date .month {
     font-size: 14px;
   }
 }
@@ -1699,6 +1697,24 @@ footer .container p {
   background-color: #b3aaaa;
   box-shadow: 6px 6px 5px 2px #dad2d2;
 }
+.article-section .container .side-section {
+  font-family: "DM Sans", sans-serif;
+}
+.article-section .container .side-section h3 {
+  position: relative;
+  display: inline-block;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.article-section .container .side-section h3:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 45px;
+  height: 2px;
+  background-color: #191919;
+}
 .article-section .container .side-section ul {
   list-style-type: none;
   padding: 0;
@@ -1708,28 +1724,56 @@ footer .container p {
   color: #191919;
   text-decoration: none;
 }
-.article-section .container .side-section .recent-posts {
-  padding-top: 30px;
+.article-section .container .side-section .search-bar {
+  padding-top: 50px;
   padding-bottom: 30px;
+  position: relative;
 }
-.article-section .container .side-section .recent-posts h3 {
-  font-family: "DM Sans", sans-serif;
-  font-size: 22px;
-  margin-bottom: 20px;
+.article-section .container .side-section .search-bar input {
+  background-color: #F3F3F3;
+  width: 100%;
+  padding: 20px 70px;
+  border: none;
+  border-radius: 50px;
+}
+.article-section .container .side-section .search-bar i {
+  position: absolute;
+  top: 50%;
+  left: 35px;
+}
+.article-section .container .side-section .recent-posts {
+  border: 1px solid rgb(231, 231, 231);
+  padding-top: 50px;
+  padding-left: 40px;
+  padding-bottom: 40px;
+  padding-right: 40px;
+}
+.article-section .container .side-section .recent-posts .posts .list-post .post:hover {
+  text-decoration: underline;
 }
 .article-section .container .side-section .recent-posts .posts .list-post .post h5 {
-  font-family: "DM Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
 }
 .article-section .container .side-section .recent-posts .posts .list-post .post p {
   font-size: 14px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgb(242, 242, 242);
+  font-family: "Inter", sans-serif;
 }
-.article-section .container .side-section .categories .list h3 {
-  font-size: 22px;
+.article-section .container .side-section .categories {
+  border: 1px solid rgb(231, 231, 231);
+  margin-top: 40px;
+  padding-top: 50px;
+  padding-left: 40px;
+  padding-bottom: 40px;
+}
+.article-section .container .side-section .categories .list .links:hover {
+  text-decoration: underline;
 }
 .article-section .container .side-section .categories .list .links .items {
   display: flex;
+  font-weight: 700;
 }
 .article-section .container .side-section .categories .list .links .items p {
   margin-right: 8px;

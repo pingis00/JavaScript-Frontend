@@ -1,6 +1,7 @@
 .article-and-news {
     padding-top: 60px;
     padding-bottom: 60px;
+
     .container {
 
         h2 {
@@ -13,27 +14,30 @@
         .articles {
 
             .article {
+                flex: 1;
+                overflow: hidden;
 
                 a {
                     text-decoration: none;
                     color: #191919;
 
-                    &:hover h3,
-                    &:hover .text {
+                    &:hover .article-title,
+                    &:hover .article-content {
                         text-decoration: underline;
                     }
                 }
 
-                .images {
+                .article-images {
                     position: relative;
+                    height: 230px;
                     
                     img {
-                        height: 300px;
                         width: 100%;
-                        padding-top: 30px;
+                        height: 100%;
+                        object-fit: cover;
                     }
 
-                    .date {
+                    .article-date {
                         position: absolute;
                         top: 46px;
                         left: 16px;
@@ -51,19 +55,24 @@
                             font-size: 22px;
                             line-height: 1;
                         }
+
                         .month {
                             line-height: 1;
                         }
                     }
                 }
 
-                h3 {
-                    margin-top: 30px;
+                .article-body {
+                    padding: 2rem 1rem;
+                    .article-title {
+
+                    }
+    
+                    .article-content {
+    
+                    }
                 }
 
-                .text {
-                    margin-top: 25px;
-                }
             }
         }
     }
@@ -85,13 +94,13 @@
 
                 .article {
 
-                    .images {
+                    .article-images {
                         
                         img {
-                            height: 150px;
+                           
                         }
 
-                        .date {
+                        .article-date {
                             height: 35px;
                             width: 30px;
                             top: 35px;
@@ -107,12 +116,17 @@
                         }
                     }
 
-                    h3 {
-                        margin-top: 15px;
-                    }
+                    .article-body {
+                        padding-top: 30px;  
 
-                    .text {
-                        margin-top: 15px;
+                        article.title {
+                           
+                            
+                        }
+    
+                        .article-content {
+
+                        }
                     }
                 }
             }
@@ -133,13 +147,16 @@
 
                 .article {
 
-                    .images {
+                    .article-images {
+                        height: 230px;
 
                         img {
-                            height: 200px;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
                         }
 
-                        .date {
+                        .article-date {
                             height: 50px;
                             width: 42px;
                             top: 40px;
@@ -173,14 +190,13 @@
 
                 .article {
 
-                    .images {
+                    .article-images {
 
                         img {
-                            height: 250px;
-                            max-width: 420px;
+
                         }
 
-                        .date {
+                        .article-date {
                             height: 50px;
                             width: 42px;
                             top: 40px;
