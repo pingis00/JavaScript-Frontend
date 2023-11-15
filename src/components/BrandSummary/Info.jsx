@@ -47,7 +47,7 @@ const Info = () => {
                 <h3>{group.title}</h3>
                 <ul>
                     {group.links.map((link, linkIndex) => (
-                        <li key={linkIndex}><Link to={link.to}>{link.text}</Link></li>
+                        <li key={linkIndex}><Link to={link.linkTo}>{link.text}</Link></li>
                     ))}
                 </ul>
             </div>

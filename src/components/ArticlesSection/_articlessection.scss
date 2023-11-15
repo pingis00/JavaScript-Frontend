@@ -1,0 +1,216 @@
+.article-section {
+
+    .container {
+        padding-top: 50px;
+        padding-bottom: 55px;
+
+        .article {
+            // width: 73%;
+
+            h2 {
+                font-family: 'DM Sans', sans-serif;
+                font-size: 30px;
+                font-weight: 700;
+            }
+    
+            .article-metadata {
+                // font-size: 20px;
+                padding-top: 10px;
+                padding-bottom: 30px;
+
+                time {
+                    margin-right: 15px;
+                }
+
+                .company {
+                    margin-right: 15px;
+                }
+
+                .dot {
+                    color: #F9D783;
+                    margin-right: 15px;
+                }
+            }
+    
+            .image-container {
+                
+                img {
+                    width: 100%;
+                    height: auto;
+                    margin-bottom: 30px;
+                }
+            }
+
+            .text {
+                margin-bottom: 40px;
+
+                p {
+                    margin-bottom: 2em;
+                }
+            }
+
+            .quote {
+                position: relative;
+                display: flex;
+
+                img {
+                    position: absolute;
+                }
+
+                p {
+                    font-size: 20px;
+                    font-family: 'DM Sans', sans-serif;
+                    margin-left: 50px;
+                }
+
+            }
+
+            .text-2 {
+                margin-top: 30px;
+            }
+
+            .category-tabs {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                .tab {
+                    background-color: rgb(243, 243, 243);
+                    color: #191919;
+                    text-decoration: none;
+                    padding: 15px 30px;
+                    font-size: 14px;
+                    border-radius: 25px;
+                    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+                    &:hover {
+                        background-color: #b3aaaa;
+                        box-shadow: 6px 6px 5px 2px #dad2d2;
+                    }
+                }
+            }
+        }
+    
+        .side-section {
+            
+            ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            a {
+                color: #191919;
+                text-decoration: none;
+            }
+
+            .search {
+                
+            }
+    
+            .recent-posts {
+                padding-top: 30px;
+                padding-bottom: 30px;
+
+                h3 {
+                    font-family: 'DM Sans', sans-serif;
+                    font-size: 22px;
+                    margin-bottom: 20px;
+                }
+                
+                .posts {
+
+                    .list-post {
+
+
+                        .post {
+
+                            h5 {
+                                font-family: 'DM Sans', sans-serif;
+                                font-size: 16px;
+                                font-weight: 700;
+                            }
+
+                            p {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .categories {
+
+                .list {
+
+                    h3 {
+                        font-size: 22px;
+                    }
+
+                    .links {
+
+                        .items {
+                            display: flex;
+
+                            p {
+                                margin-right: 8px;
+                            }
+
+                            span {
+                                color: rgb(152, 152, 152);
+                                margin-left: 8px;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .article-section {
+
+        .container {
+
+            .article {
+
+                h2 {
+                    font-size: 45px;
+                }
+
+                .article-metadata {
+                    font-size: 20px;
+                    padding-top: 20px;
+                    padding-bottom: 40px;
+
+                    time {
+                        margin-right: 20px;
+                    }
+
+                    .company {
+                        margin-right: 20px;
+                    }
+
+                    .dot {
+                        color: #F9D783;
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    
+}
+
+@media (min-width: 1200px) {
+    
+}
+
+@media (min-width: 1400px) {
+    
+}

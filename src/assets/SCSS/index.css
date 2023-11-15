@@ -1506,6 +1506,13 @@ footer .container p {
   font-weight: 700;
   margin-bottom: 20px;
 }
+.article-and-news .container .articles .article a {
+  text-decoration: none;
+  color: #191919;
+}
+.article-and-news .container .articles .article a:hover h3, .article-and-news .container .articles .article a:hover .text {
+  text-decoration: underline;
+}
 .article-and-news .container .articles .article .images {
   position: relative;
 }
@@ -1623,5 +1630,132 @@ footer .container p {
   }
   .article-and-news .container .articles .article .images .date .month {
     font-size: 14px;
+  }
+}
+.article-section .container {
+  padding-top: 50px;
+  padding-bottom: 55px;
+}
+.article-section .container .article h2 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+}
+.article-section .container .article .article-metadata {
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+.article-section .container .article .article-metadata time {
+  margin-right: 15px;
+}
+.article-section .container .article .article-metadata .company {
+  margin-right: 15px;
+}
+.article-section .container .article .article-metadata .dot {
+  color: #F9D783;
+  margin-right: 15px;
+}
+.article-section .container .article .image-container img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+.article-section .container .article .text {
+  margin-bottom: 40px;
+}
+.article-section .container .article .text p {
+  margin-bottom: 2em;
+}
+.article-section .container .article .quote {
+  position: relative;
+  display: flex;
+}
+.article-section .container .article .quote img {
+  position: absolute;
+}
+.article-section .container .article .quote p {
+  font-size: 20px;
+  font-family: "DM Sans", sans-serif;
+  margin-left: 50px;
+}
+.article-section .container .article .text-2 {
+  margin-top: 30px;
+}
+.article-section .container .article .category-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.article-section .container .article .category-tabs .tab {
+  background-color: rgb(243, 243, 243);
+  color: #191919;
+  text-decoration: none;
+  padding: 15px 30px;
+  font-size: 14px;
+  border-radius: 25px;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.article-section .container .article .category-tabs .tab:hover {
+  background-color: #b3aaaa;
+  box-shadow: 6px 6px 5px 2px #dad2d2;
+}
+.article-section .container .side-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.article-section .container .side-section a {
+  color: #191919;
+  text-decoration: none;
+}
+.article-section .container .side-section .recent-posts {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.article-section .container .side-section .recent-posts h3 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.article-section .container .side-section .recent-posts .posts .list-post .post h5 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+.article-section .container .side-section .recent-posts .posts .list-post .post p {
+  font-size: 14px;
+}
+.article-section .container .side-section .categories .list h3 {
+  font-size: 22px;
+}
+.article-section .container .side-section .categories .list .links .items {
+  display: flex;
+}
+.article-section .container .side-section .categories .list .links .items p {
+  margin-right: 8px;
+}
+.article-section .container .side-section .categories .list .links .items span {
+  color: rgb(152, 152, 152);
+  margin-left: 8px;
+}
+
+@media (min-width: 768px) {
+  .article-section .container .article h2 {
+    font-size: 45px;
+  }
+  .article-section .container .article .article-metadata {
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+  .article-section .container .article .article-metadata time {
+    margin-right: 20px;
+  }
+  .article-section .container .article .article-metadata .company {
+    margin-right: 20px;
+  }
+  .article-section .container .article .article-metadata .dot {
+    color: #F9D783;
+    margin-right: 20px;
   }
 }

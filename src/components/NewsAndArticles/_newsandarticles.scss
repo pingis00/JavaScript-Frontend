@@ -14,6 +14,16 @@
 
             .article {
 
+                a {
+                    text-decoration: none;
+                    color: #191919;
+
+                    &:hover h3,
+                    &:hover .text {
+                        text-decoration: underline;
+                    }
+                }
+
                 .images {
                     position: relative;
                     

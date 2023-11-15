@@ -1,5 +1,6 @@
 import React from 'react'
 import { useArticles } from '../../contexts/ArticleContext'
+import { NavLink } from 'react-router-dom'
 
 const NewsAndArticles = () => {
     const {articles} = useArticles()
@@ -18,16 +19,18 @@ const NewsAndArticles = () => {
                 {
                 articles.map(article => (
                     <div key={article.id} className='article'>
-                        <div className='images'>
-                            <img src={article.imageUrl} alt={article.title} />
-                            <div className='date'>
-                                <span className="day">{formatDate(article.published).day}</span>
-                                <span className="month">{formatDate(article.published).month}</span>
+                        <NavLink to={`/newsDetails/${article.id}`}>
+                            <div className='images'>
+                                <img src={article.imageUrl} alt={article.title} />
+                                <div className='date'>
+                                    <span className="day">{formatDate(article.published).day}</span>
+                                    <span className="month">{formatDate(article.published).month}</span>
+                                </div>
                             </div>
-                        </div>
-                        <p>{article.category}</p>
-                        <h3>{article.title}</h3>
-                        <p className='text'>{article.content}</p>
+                            <p>{article.category}</p>
+                            <h3>{article.title}</h3>
+                            <p className='text'>{article.content}</p>
+                        </NavLink>
                     </div>
                 ))
                 }
