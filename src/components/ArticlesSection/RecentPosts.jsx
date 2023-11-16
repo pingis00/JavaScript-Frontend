@@ -13,8 +13,8 @@ const RecentPosts = () => {
     <ul className='posts'>
         {
             postList.map((item, index) => (
-                <Link to={item.linkTo} className='list-post'>
-                    <li key={index} className='post'>
+                <Link key={index} to={item.linkTo} className='list-post'>
+                    <li className='post'>
                         <h5>{item.headline}</h5>
                         <p>{item.date}</p>
                     </li>

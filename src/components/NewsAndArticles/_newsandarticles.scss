@@ -1,81 +1,6 @@
 .article-and-news {
     padding-top: 60px;
     padding-bottom: 60px;
-
-    .container {
-
-        h2 {
-            font-family: 'DM Sans', sans-serif;
-            font-size: 30px;
-            font-weight: 700;
-            margin-bottom: 20px;
-        } 
-
-        .articles {
-
-            .article {
-                flex: 1;
-                overflow: hidden;
-
-                a {
-                    text-decoration: none;
-                    color: #191919;
-
-                    &:hover .article-title,
-                    &:hover .article-content {
-                        text-decoration: underline;
-                    }
-                }
-
-                .article-images {
-                    position: relative;
-                    height: 230px;
-                    
-                    img {
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                    }
-
-                    .article-date {
-                        position: absolute;
-                        top: 46px;
-                        left: 16px;
-                        background-color: #F9D783;
-                        height: 64px;
-                        width: 56px;
-                        text-align: center;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-
-                        .day {
-                            font-family: 'DM Sans', sans-serif;
-                            font-weight: 700;
-                            font-size: 22px;
-                            line-height: 1;
-                        }
-
-                        .month {
-                            line-height: 1;
-                        }
-                    }
-                }
-
-                .article-body {
-                    padding: 2rem 1rem;
-                    .article-title {
-
-                    }
-    
-                    .article-content {
-    
-                    }
-                }
-
-            }
-        }
-    }
 }
 
 @media (min-width: 768px) {
@@ -84,134 +9,40 @@
         .container {
 
             h2 {
-                margin-bottom: 0;
+                margin-bottom: 30px;
             }
 
-            .articles {
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                column-gap: 20px;
-
-                .article {
-
-                    .article-images {
-                        
-                        img {
-                           
-                        }
-
-                        .article-date {
-                            height: 35px;
-                            width: 30px;
-                            top: 35px;
-                            left: 6px;
-
-                            .day {
-                                font-size: 16px;
-
-                            }
-                            .month {
-                                font-size: 12px;
-                            }
-                        }
-                    }
-
-                    .article-body {
-                        padding-top: 30px;  
-
-                        article.title {
-                           
-                            
-                        }
-    
-                        .article-content {
-
-                        }
-                    }
-                }
-            }
         }
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
+    .article-and-news {
+        .container {
+            .articles {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+    }
 
+}
+
+@media (min-width: 992px) {
     .article-and-news {
         padding-top: 120px;
         padding-bottom: 90px;
 
-        .container {
-
-            .articles {
-                column-gap: 30px;
-
-                .article {
-
-                    .article-images {
-                        height: 230px;
-
-                        img {
-                            width: 100%;
-                            height: 100%;
-                            object-fit: cover;
-                        }
-
-                        .article-date {
-                            height: 50px;
-                            width: 42px;
-                            top: 40px;
-                            left: 10px;
-
-                            .day {
-                                font-size: 20px;
-
-                            }
-                            .month {
-                                font-size: 14px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
     }
 }
 
 @media (min-width: 1200px) {
-
     .article-and-news {
-        padding-top: 120px;
-        padding-bottom: 90px;
 
         .container {
 
-            .articles {
-                column-gap: 40px;
-
-                .article {
-
-                    .article-images {
-
-                        img {
-
-                        }
-
-                        .article-date {
-                            height: 50px;
-                            width: 42px;
-                            top: 40px;
-                            left: 10px;
-
-                            .day {
-                                font-size: 20px;
-
-                            }
-                            .month {
-                                font-size: 14px;
-                            }
-                        }
-                    }
-                }
+            h2 {
+                margin-bottom: 50px;
             }
         }
     }

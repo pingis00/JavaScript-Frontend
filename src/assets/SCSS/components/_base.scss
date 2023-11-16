@@ -12,6 +12,21 @@ html, body {
     grid-template-rows: auto 1fr auto;
 }
 
+h2 {
+    color: #191919;
+    font-family: 'Dm Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+
+    @media (min-width: 768px) {
+        font-size: 40px;
+    }
+
+    @media (min-width: 1400px) {
+        font-size: 45px;
+    }
+}
+
 h3 {
     font-family: 'DM Sans', sans-serif;
     font-weight: 700;

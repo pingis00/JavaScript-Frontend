@@ -10,7 +10,7 @@ const Newsletter = () => {
                 <h2>Get News Updates By Signup</h2>
                 <form id="signUp" method="post">
                     <input type="email" id="email" name="email" title="E-postadress" placeholder="username@domain.com" />
-                    <Buttons title="Subscribe" url="/subscribe" />
+                    <Buttons className="subscribe-button" title="Subscribe" url="/subscribe" />
                 </form>
             </div>
         </section>  

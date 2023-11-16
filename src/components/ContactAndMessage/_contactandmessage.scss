@@ -43,8 +43,6 @@
             padding: 30px 20px;
 
             h2 {
-                font-size: 30px;
-                font-weight: 700;
                 text-align: center;
                 margin-bottom: 20px;
             }
@@ -106,10 +104,6 @@
 
             .message-information {
                 padding: 60px 40px;
-
-                h2 {
-                    font-size: 40px;
-                }
             }
         }
     }
@@ -131,8 +125,7 @@
         }     
     }
 }
-@media (min-width: 1200px) {
-    
+@media (min-width: 1200px) { 
     .contact-and-message {
         padding-top: 120px;
         padding-bottom: 120px;
@@ -163,10 +156,6 @@
 
             .message-information {
                 padding: 120px 150px 100px 150px;
-
-                h2 {
-                    font-size: 45px;
-                }
             }
         }
     }

@@ -3,6 +3,13 @@
     padding-bottom: 60px;
 
     .container {
+        position: relative;
+        .carousel {
+
+        }
+        .custom-dot-style {
+            
+        }
 
         .intro-title {
 
@@ -12,64 +19,35 @@
                     margin-bottom: 20px;
                 }
             }
-        }
 
-        .news {
-
-            article {
-                
-                a {
-                    text-decoration: none;
-                    color: #191919;
-
-                    img {
-                        width: 100%;
-                        height: auto;
-                        padding-top: 30px;
-                        padding-bottom: 5px;
-                    }
-
-                    &:hover h3,
-                    &:hover .text{
-                        text-decoration: underline;
-                    }
-                }
+            .btn-browse-articles {
+                margin-bottom: 40px;
             }
         }
-   
-        .dot {
-            background-color: rgb(229, 229, 229);
-
-            &:hover {
-                background-color: black;
-            }
-        }  
     }
 }
+
 
 @media (min-width: 768px) {
-    .article-news {
 
-        .container {
+    .container {
+        
+        .articles {
 
-            .news {
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                column-gap: 30px;
-    
-                article {
+            .article {
+                margin-right: 20px;
 
-                    a {
+                .article-body {
 
-                        img {
-                            padding-top: 50px;
-                        }    
+                    .article-title {
+                        -webkit-line-clamp: 1;
                     }
                 }
             }
-        }
+        }    
     }
 }
+
 
 @media (min-width: 992px) {
     .article-news {
@@ -87,42 +65,6 @@
                     text-align: left;
                 }
             }
-
-            .news {
-
-                article {
-
-                    a {
-                        img {
-                            padding-top: 35px;
-                            padding-bottom: 30px;
-                        }
-
-                        h3 {
-                            padding-bottom: 10px;
-                        }
-                    }
-                }
-            }
-
-            .dot {
-                margin-top: 65px;
-            }
         }  
-    }
-}
-
-@media (min-width: 1200px) {
-    .article-news {
-
-        .container {
-
-            .news {
-
-                h3 {
-                    width: 80%;
-                }
-            }
-        }
     }
 }

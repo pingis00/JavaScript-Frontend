@@ -37,17 +37,17 @@ const Articles = () => {
                                 <ArticleIntro article={article} formatDate={formatDate} />
                             </div>
                             <div className='text'>
-                                <Articletext content={article.content} repeats={15} />
+                                <Articletext content={article.content} repeats={14} />
                             </div>
                             <blockquote className='quote'>
                                 <img src={Quote} alt="" />
                                 <p>
-                                    <Articletext content={article.content} repeats={5} />
+                                    <Articletext content={article.content} repeats={2} />
                                 </p>
                             </blockquote>
                             <div className='text-2'>
                                 <p>
-                                    <Articletext content={article.content} repeats={6} />
+                                    <Articletext content={article.content} repeats={4} />
                                 </p>
                             </div>
                             <div className='category-tabs'>
@@ -57,7 +57,7 @@ const Articles = () => {
                         <section className='side-section'>
                             <div className='search-bar'>
                                 <input  type="text" placeholder='Type to search...' />
-                                <i class="fa-regular fa-magnifying-glass"></i>
+                                <i className="fa-regular fa-magnifying-glass"></i>
                             </div>
                             <div className='recent-posts'>
                                 <h3>Recent Posts</h3>

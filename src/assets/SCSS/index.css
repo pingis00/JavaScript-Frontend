@@ -14,6 +14,23 @@ html, body {
   grid-template-rows: auto 1fr auto;
 }
 
+h2 {
+  color: #191919;
+  font-family: "Dm Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  h2 {
+    font-size: 40px;
+  }
+}
+@media (min-width: 1400px) {
+  h2 {
+    font-size: 45px;
+  }
+}
+
 h3 {
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
@@ -115,25 +132,11 @@ h3 {
 }
 
 .section-title {
-  color: #F94D1C;
-  font-size: 18px;
   margin-bottom: 10px;
 }
-.section-title h2 {
-  color: #191919;
-  font-family: "Dm Sans", sans-serif;
-  font-size: 30px;
-  font-weight: 700;
-}
-@media (min-width: 768px) {
-  .section-title h2 {
-    font-size: 40px;
-  }
-}
-@media (min-width: 1400px) {
-  .section-title h2 {
-    font-size: 45px;
-  }
+.section-title p {
+  color: #F94D1C;
+  font-size: 18px;
 }
 
 .socialmedia-bar {
@@ -1013,38 +1016,22 @@ header .container .menu {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.article-news .container {
+  position: relative;
+}
 .article-news .container .intro-title .section-title h2 {
   margin-bottom: 20px;
 }
-.article-news .container .news article a {
-  text-decoration: none;
-  color: #191919;
-}
-.article-news .container .news article a img {
-  width: 100%;
-  height: auto;
-  padding-top: 30px;
-  padding-bottom: 5px;
-}
-.article-news .container .news article a:hover h3, .article-news .container .news article a:hover .text {
-  text-decoration: underline;
-}
-.article-news .container .dot {
-  background-color: rgb(229, 229, 229);
-}
-.article-news .container .dot:hover {
-  background-color: black;
+.article-news .container .intro-title .btn-browse-articles {
+  margin-bottom: 40px;
 }
 
 @media (min-width: 768px) {
-  .article-news .container .news {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    -moz-column-gap: 30px;
-         column-gap: 30px;
+  .container .articles .article {
+    margin-right: 20px;
   }
-  .article-news .container .news article a img {
-    padding-top: 50px;
+  .container .articles .article .article-body .article-title {
+    -webkit-line-clamp: 1;
   }
 }
 @media (min-width: 992px) {
@@ -1060,21 +1047,6 @@ header .container .menu {
   .article-news .container .intro-title .section-title {
     text-align: left;
   }
-  .article-news .container .news article a img {
-    padding-top: 35px;
-    padding-bottom: 30px;
-  }
-  .article-news .container .news article a h3 {
-    padding-bottom: 10px;
-  }
-  .article-news .container .dot {
-    margin-top: 65px;
-  }
-}
-@media (min-width: 1200px) {
-  .article-news .container .news h3 {
-    width: 80%;
-  }
 }
 .newsletter {
   background-color: #F0EFE9;
@@ -1087,20 +1059,20 @@ header .container .menu {
   text-align: center;
 }
 .newsletter .container h2 {
-  font-family: "DM Sans", sans-serif;
-  font-size: 30px;
-  font-weight: 700;
   margin-bottom: 30px;
 }
 .newsletter .container input {
+  width: 100%;
   color: #191919;
-  text-align: none;
   padding: 15px 30px;
   font-size: 16px;
   border-radius: 25px;
   outline: none;
   border: 1px solid rgba(25, 25, 25, 0.1);
-  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.newsletter .container .subscribe-button {
+  display: block;
 }
 
 @media (min-width: 768px) {
@@ -1115,8 +1087,19 @@ header .container .menu {
     right: 0;
     z-index: -1;
   }
-  .newsletter .container h2 {
-    font-size: 40px;
+}
+@media (min-width: 992px) {
+  .container #signUp {
+    display: flex;
+    justify-content: center;
+  }
+  .container #signUp input {
+    width: auto;
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+  .container #signUp .subscribe-button {
+    display: inline;
   }
 }
 @media (min-width: 1200px) {
@@ -1131,7 +1114,6 @@ header .container .menu {
     justify-content: space-between;
   }
   .newsletter .container h2 {
-    font-size: 45px;
     margin-bottom: 0;
   }
 }
@@ -1332,8 +1314,6 @@ footer .container p {
   padding: 30px 20px;
 }
 .contact-and-message .container .message-information h2 {
-  font-size: 30px;
-  font-weight: 700;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -1377,9 +1357,6 @@ footer .container p {
   .contact-and-message .container .message-information {
     padding: 60px 40px;
   }
-  .contact-and-message .container .message-information h2 {
-    font-size: 40px;
-  }
 }
 @media (min-width: 992px) {
   .contact-and-message .container .contact {
@@ -1413,9 +1390,6 @@ footer .container p {
   }
   .contact-and-message .container .message-information {
     padding: 120px 150px 100px 150px;
-  }
-  .contact-and-message .container .message-information h2 {
-    font-size: 45px;
   }
 }
 @media (min-width: 1400px) {
@@ -1500,81 +1474,16 @@ footer .container p {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.article-and-news .container h2 {
-  font-family: "DM Sans", sans-serif;
-  font-size: 30px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-.article-and-news .container .articles .article {
-  flex: 1;
-  overflow: hidden;
-}
-.article-and-news .container .articles .article a {
-  text-decoration: none;
-  color: #191919;
-}
-.article-and-news .container .articles .article a:hover .article-title, .article-and-news .container .articles .article a:hover .article-content {
-  text-decoration: underline;
-}
-.article-and-news .container .articles .article .article-images {
-  position: relative;
-  height: 230px;
-}
-.article-and-news .container .articles .article .article-images img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.article-and-news .container .articles .article .article-images .article-date {
-  position: absolute;
-  top: 46px;
-  left: 16px;
-  background-color: #F9D783;
-  height: 64px;
-  width: 56px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.article-and-news .container .articles .article .article-images .article-date .day {
-  font-family: "DM Sans", sans-serif;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 1;
-}
-.article-and-news .container .articles .article .article-images .article-date .month {
-  line-height: 1;
-}
-.article-and-news .container .articles .article .article-body {
-  padding: 2rem 1rem;
-}
+
 @media (min-width: 768px) {
   .article-and-news .container h2 {
-    margin-bottom: 0;
+    margin-bottom: 30px;
   }
+}
+@media (min-width: 768px) {
   .article-and-news .container .articles {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    -moz-column-gap: 20px;
-         column-gap: 20px;
-  }
-  .article-and-news .container .articles .article .article-images .article-date {
-    height: 35px;
-    width: 30px;
-    top: 35px;
-    left: 6px;
-  }
-  .article-and-news .container .articles .article .article-images .article-date .day {
-    font-size: 16px;
-  }
-  .article-and-news .container .articles .article .article-images .article-date .month {
-    font-size: 12px;
-  }
-  .article-and-news .container .articles .article .article-body {
-    padding-top: 30px;
   }
 }
 @media (min-width: 992px) {
@@ -1582,62 +1491,15 @@ footer .container p {
     padding-top: 120px;
     padding-bottom: 90px;
   }
-  .article-and-news .container .articles {
-    -moz-column-gap: 30px;
-         column-gap: 30px;
-  }
-  .article-and-news .container .articles .article .article-images {
-    height: 230px;
-  }
-  .article-and-news .container .articles .article .article-images img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .article-and-news .container .articles .article .article-images .article-date {
-    height: 50px;
-    width: 42px;
-    top: 40px;
-    left: 10px;
-  }
-  .article-and-news .container .articles .article .article-images .article-date .day {
-    font-size: 20px;
-  }
-  .article-and-news .container .articles .article .article-images .article-date .month {
-    font-size: 14px;
-  }
 }
 @media (min-width: 1200px) {
-  .article-and-news {
-    padding-top: 120px;
-    padding-bottom: 90px;
-  }
-  .article-and-news .container .articles {
-    -moz-column-gap: 40px;
-         column-gap: 40px;
-  }
-  .article-and-news .container .articles .article .article-images .article-date {
-    height: 50px;
-    width: 42px;
-    top: 40px;
-    left: 10px;
-  }
-  .article-and-news .container .articles .article .article-images .article-date .day {
-    font-size: 20px;
-  }
-  .article-and-news .container .articles .article .article-images .article-date .month {
-    font-size: 14px;
+  .article-and-news .container h2 {
+    margin-bottom: 50px;
   }
 }
 .article-section .container {
   padding-top: 50px;
   padding-bottom: 55px;
-}
-.article-section .container .article h2 {
-  font-family: "DM Sans", sans-serif;
-  font-size: 30px;
-  font-weight: 700;
 }
 .article-section .container .article .article-metadata {
   padding-top: 10px;
@@ -1683,6 +1545,7 @@ footer .container p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 10px;
 }
 .article-section .container .article .category-tabs .tab {
   background-color: rgb(243, 243, 243);
@@ -1784,9 +1647,6 @@ footer .container p {
 }
 
 @media (min-width: 768px) {
-  .article-section .container .article h2 {
-    font-size: 45px;
-  }
   .article-section .container .article .article-metadata {
     font-size: 20px;
     padding-top: 20px;
@@ -1801,5 +1661,132 @@ footer .container p {
   .article-section .container .article .article-metadata .dot {
     color: #F9D783;
     margin-right: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .article-section .container {
+    display: flex;
+    padding-top: 120px;
+  }
+  .article-section .container .article {
+    width: 75%;
+    margin-right: 150px;
+  }
+  .article-section .container .article .text-2 {
+    margin-bottom: 30px;
+  }
+  .article-section .container .side-section {
+    padding-top: 140px;
+  }
+}
+.article {
+  padding-bottom: 20px;
+}
+.article a {
+  text-decoration: none;
+  color: #191919;
+}
+.article a:hover .article-title, .article a:hover .article-content {
+  text-decoration: underline;
+}
+.article .article-images {
+  position: relative;
+  height: 230px;
+}
+.article .article-images img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.article .article-images .article-date {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background-color: #F9D783;
+  height: 64px;
+  width: 56px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.article .article-images .article-date .day {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1;
+}
+.article .article-images .article-date .month {
+  line-height: 1;
+}
+
+@media (min-width: 768px) {
+  .articles .article .article-images {
+    height: 150px;
+  }
+  .articles .article .article-images .article-date {
+    height: 35px;
+    width: 30px;
+  }
+  .articles .article .article-images .article-date .day {
+    font-size: 16px;
+  }
+  .articles .article .article-images .article-date .month {
+    font-size: 12px;
+  }
+  .articles .article .article-body {
+    padding-top: 20px;
+  }
+  .articles .article .article-body .article-title {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .articles .article .article-body .article-content {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+@media (min-width: 992px) {
+  .articles .article .article-images {
+    height: 190px;
+  }
+  .articles .article .article-images .article-date {
+    height: 50px;
+    width: 42px;
+  }
+  .articles .article .article-images .article-date .day {
+    font-size: 20px;
+  }
+  .articles .article .article-images .article-date .month {
+    font-size: 14px;
+  }
+  .articles .article .article-body .article-title {
+    -webkit-line-clamp: 1;
+  }
+}
+@media (min-width: 1200px) {
+  .articles .article {
+    padding-bottom: 50px;
+  }
+  .articles .article .article-images {
+    height: 230px;
+  }
+  .articles .article .article-images .article-date {
+    height: 64px;
+    width: 55px;
+  }
+  .articles .article .article-images .article-date .day {
+    font-size: 22px;
+  }
+  .articles .article .article-images .article-date .month {
+    font-size: 16px;
+  }
+  .articles .article .article-body .article-content {
+    -webkit-line-clamp: 2;
   }
 }

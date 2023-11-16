@@ -16,8 +16,8 @@ const CategoryList = () => {
     <ul className='list'>
         {
             categoryLinks.map((item, index) => (
-                <Link to={item.linkTo} className='links'>
-                    <li key={index} className='items'>
+                <Link key={index} to={item.linkTo} className='links'>
+                    <li className='items'>
                         <p>{item.category}</p> - <span>{item.posts} Posts</span> 
                     </li>
                 </Link>
