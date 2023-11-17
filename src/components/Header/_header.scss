@@ -12,7 +12,9 @@ header {
             grid-area: bars;
             border: none;
             font-size: 25px;
-            background-color: transparent;
+            background-color: white;
+            color: green;
+            z-index: 2;
         }
     
         .logotype {
@@ -52,32 +54,12 @@ header {
                 padding-top: 10px;
     
                 nav {
-
+                    
                     a {
-                        display: inline-block; 
-                        color: #191919;
-                        text-decoration: none;
-                        margin-right: 35px;
-                        position: relative;
-    
-                        &.active {
-                            font-weight: 500;
-                        }
-    
-                        &.active::after,
-                        &:hover::after {
-                            content: "";
-                            position: absolute;
-                            font-weight: 500;
-                            height: 2px;
-                            width: 15px;
-                            background-color: #191919;
-                            left: 50%;
-                            bottom: -3px;
-                            transform: translate((calc(50% - 15px)));
-                        }
+
                     }
                 }
+
     
                 .btn-login {
                     padding-top: 12px;

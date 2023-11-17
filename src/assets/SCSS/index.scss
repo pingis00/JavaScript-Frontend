@@ -1,9 +1,12 @@
+@import "./components/generics/customBootstrap";
+@import "~bootstrap/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900&display=swap');
 @import "./components/base.scss";
 @import "./components/generics/buttons.scss";
 @import "./components/generics/sectionTitle";
 @import "./components/generics/socialMediaIcons";
+@import "./components/generics/sliderstyle";
 @import "../../components/Header/header";
 @import "../../components/Showcase/showcase";
 @import "../../components/Logos/logossection";
@@ -25,3 +28,5 @@
 @import "../../components/NewsAndArticles/newsandarticles";
 @import "../../components/ArticlesSection/articlessection";
 @import "../../components/ArticleList/articlelist";
+@import "../../components/Menu/menu";
+@import "../../components/Links/links";

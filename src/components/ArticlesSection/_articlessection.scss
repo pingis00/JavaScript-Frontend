@@ -25,16 +25,18 @@
             }
     
             .image-container {
-                
+                height: 230px;
+
                 img {
                     width: 100%;
-                    height: auto;
-                    margin-bottom: 30px;
+                    height: 100%;
+                    object-fit: cover;
                 }
             }
 
             .text {
                 margin-bottom: 40px;
+                margin-top: 30px;
 
                 p {
                     margin-bottom: 2em;
@@ -211,7 +213,7 @@
         .container {
 
             .article {
-
+                
                 .article-metadata {
                     font-size: 20px;
                     padding-top: 20px;
@@ -230,14 +232,30 @@
                         margin-right: 20px;
                     }
                 }
+
+                .image-container {
+                    height: 350px;
+                }
             }
         }
     }
 }
 
 @media (min-width: 992px) {
-    
+    .article-section {
+
+        .container {
+
+            .article {
+                
+                .image-container {
+                    height: 500px;
+                }
+            }
+        }
+    } 
 }
+
 
 @media (min-width: 1200px) {
     .article-section {

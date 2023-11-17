@@ -18,10 +18,13 @@
 
 @media (min-width: 768px) {
     .article-and-news {
+
         .container {
+
             .articles {
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
+                gap: 20px;
             }
         }
     }
@@ -40,6 +43,10 @@
     .article-and-news {
 
         .container {
+            
+            .articles {
+                gap: 30px;
+            }
 
             h2 {
                 margin-bottom: 50px;

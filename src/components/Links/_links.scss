@@ -1,0 +1,42 @@
+.main-menu {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 30px 16px;
+    z-index: 1;
+    padding: 90px 0;
+}
+
+.links-mobile {
+    text-decoration: none;
+}
+
+
+
+.links-big-screen {
+    display: inline-block; 
+    color: #191919;
+    margin-right: 35px;
+    position: relative;
+    text-decoration: none;
+
+    &.active {
+        font-weight: 500;
+    }
+
+    &.active::after,
+    &:hover::after {
+        content: "";
+        position: absolute;
+        font-weight: 500;
+        height: 2px;
+        width: 15px;
+        background-color: #191919;
+        left: 50%;
+        bottom: -3px;
+        transform: translate((calc(50% - 15px)));
+    }
+}

@@ -69,3 +69,27 @@
         font-size: 0.9em;
     }
 }
+
+.btn-white {
+    background-color: #ffffff;
+    border: 1px solid #191919;
+    color:#191919;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 25px;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+    &:hover {
+        background-color: #191919;
+        border: 1px solid #191919;
+        color: rgb(227, 223, 223);
+        box-shadow: 6px 6px 5px 2px #aeacac;
+    }
+
+    i {
+        margin-left: 8px;
+        font-size: 0.9em;
+    }
+}
