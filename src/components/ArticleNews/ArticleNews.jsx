@@ -7,10 +7,11 @@ import SectionTitle from '@generics/SectionTitle'
 import Buttons from '@generics/Buttons'
 import ArticleList from '../ArticleList/ArticleList'
 import { useArticles } from '../../contexts/ArticleContext';
+import ErrorMessages from '../generics/ErrorMessages';
 
 
 const ArticleNews = ( { backgroundColor = '#ffffff', buttonType = 'btn-transparent' } ) => {
-    const { articles } = useArticles()
+    const { articles, error } = useArticles()
 
     const settings = {
         dots: true,
@@ -46,13 +47,18 @@ const ArticleNews = ( { backgroundColor = '#ffffff', buttonType = 'btn-transpare
                         <Buttons className={`btn-browse-articles ${buttonType}`} title="Browse Articles" url="/News"/>
                     </div>
                 </div>
-                <Slider {...settings}>
-                    {
-                        articles.map((article, index) => (
-                            <ArticleList key={index} articles={[article]} />
-                        ))
-                    } 
-                </Slider>   
+                {error ? (
+                    <ErrorMessages message={error} />
+                ) : (
+                    <Slider className='custom-slider' {...settings}>
+                        {
+                            articles.map((article) => (
+                                <ArticleList key={article.id} articles={[article]} />
+                            ))
+                        } 
+                    </Slider>   
+                )}
+
             </div>
         </section>
     )

@@ -2,23 +2,32 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
+    
     .container {
-        position: relative;
+         position: relative;
 
         .intro-title {
-
+    
             .section-title {
-
+    
                 h2 {
-                    margin-bottom: 20px;
+                        margin-bottom: 20px;
                 }
             }
-
+    
             .btn-browse-articles {
                 margin-bottom: 40px;
             }
         }
-    }
+
+        .custom-slider {
+            @media (max-width: 576px) {
+                max-width: 360px;
+                margin-right: auto;
+                margin-left: auto;
+            }
+        }
+    }  
 }
 
 

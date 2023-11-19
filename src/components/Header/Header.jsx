@@ -3,22 +3,16 @@ import { Link } from 'react-router-dom'
 import Buttons from '@generics/Buttons'
 import SocialMediaIcons from '@generics/SocialMediaIcons'
 import Logo from '@images/Logo.svg'
-import Menu from '../Menu/Menu'
 import Links from '../Links/Links'
+import MenuBar from '../MenuBar/MenuBar'
 
 const Header = () => {
-    const [menuOpen, setMenuOpen] = useState(true)
-
-
 
     return (
         <>
-            { menuOpen  ? (<Menu />) : (<></>)}
             <header>
                 <div className="container">
-                    <button onClick={() => setMenuOpen(!menuOpen)} className="btn-menubars">
-                        {menuOpen ? (<i className="fa-solid fa-xmark"></i>) : (<i className="fa-solid fa-bars-staggered"></i>)}
-                    </button> 
+                    <MenuBar />
                     <div className="logotype">
                         <Link to="/">
                             <img src={Logo} alt="crito logotype" />

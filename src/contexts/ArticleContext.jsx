@@ -8,20 +8,41 @@ export const ArticleProvider = ({children}) => {
     const apiUrl = "https://win23-assignment.azurewebsites.net/api/articles"
     const [articles, setArticles] = useState([])
     const [article, setArticle] = useState(null)
+    const [error, setError] = useState('')
 
     useEffect(() => {
         getArticles()
     }, [])
 
     const getArticles = async () => {
-        const result = await fetch(apiUrl)
-        setArticles(await result.json())
+
+        try {
+            const result = await fetch(apiUrl)
+            if (!result.ok) {
+                throw new Error('Nätverksförfrågan misslyckades')
+            }
+            setArticles(await result.json())
+            setError('')
+        }
+        catch (error) {
+            setError(error.message)
+        }
+        
     }
 
     const getArticle = async (id) => {
-        const result = await fetch(`${apiUrl}/${id}`)
-        const data = await result.json()
-        setArticle(data)
+        try {
+            const result = await fetch(`${apiUrl}/${id}`)
+            if (!result.ok) {
+                throw new Error('Nätverksförfrågan misslyckades')
+            }
+            const data = await result.json()
+            setArticle(data)
+        }
+        catch (error) {
+            setError(error.message)
+        }
+
     }
 
     const clearArticle = () => {
@@ -29,7 +50,7 @@ export const ArticleProvider = ({children}) => {
     }
 
     return (
-        <ArticleContext.Provider value={{articles, article, getArticles, getArticle, clearArticle}}>
+        <ArticleContext.Provider value={{articles, article, error, getArticles, getArticle, clearArticle}}>
             {children}
         </ArticleContext.Provider>
     )

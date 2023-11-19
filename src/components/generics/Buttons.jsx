@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const Buttons = ({type, url, title, className}) => {
+const Buttons = ({type, url, title, className, onClick}) => {
 
     const getButtonType = () => {
         switch(type) {
@@ -16,8 +16,15 @@ const Buttons = ({type, url, title, className}) => {
         }
     }
 
+    const handleClick = (e) => {
+        if (onClick) {
+            onClick(e)
+        }
+    }
+
     return (
-        <Link className={`${getButtonType(type)} ${className}`} to={url}>{title}
+        <Link className={`${getButtonType(type)} ${className}`} to={url} onClick={handleClick}>
+            {title}
         <i className="fa-regular fa-arrow-up-right"></i></Link>
     )
 }

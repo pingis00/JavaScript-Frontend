@@ -1,20 +1,32 @@
 .main-menu {
-    background-color: black;
+    background-color: #1a1a19;
     position: fixed;
     top: 0;
-    bottom: 0;
+    bottom: 60vh;
     right: 0;
     left: 0;
-    padding: 30px 16px;
     z-index: 1;
-    padding: 90px 0;
+    padding: 70px 10px; 
+    border-radius: 10px; 
+
+    .links-mobile {
+        text-decoration: none;
+        display: block;
+        color: rgb(231, 226, 226);
+        text-align: center;
+        padding: 15px;
+        border-bottom: 1px solid #4d4444;
+        transition: background-color 0.2s ease-in-out;
+
+        &:hover {
+            background-color: #555252;
+        }
+    }
+    .active {
+        background-color: #31312f;
+    }
+
 }
-
-.links-mobile {
-    text-decoration: none;
-}
-
-
 
 .links-big-screen {
     display: inline-block; 
@@ -38,5 +50,13 @@
         left: 50%;
         bottom: -3px;
         transform: translate((calc(50% - 15px)));
+    }
+}
+
+@media (min-width: 992px) {
+
+    .main-menu {
+        display: none;
+    
     }
 }

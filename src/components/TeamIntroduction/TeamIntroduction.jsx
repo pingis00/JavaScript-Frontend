@@ -11,7 +11,7 @@ const TeamIntroduction = () => {
             <div className="container">
                 <div className="meet-our-team">
                     <SectionTitle title="Meet Our Team" headline="Experience Team Members" />
-                    <Buttons url="/browseteam" title="Browse Team" />                   
+                    <Buttons url="/browseteam" title="Browse Team" className='btn' />                   
                 </div>
                 <div className="team-members">
                     <TeamMembers />

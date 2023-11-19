@@ -1,0 +1,25 @@
+.btnMenubars{
+background-color: transparent;
+border: none;
+font-size: 25px;
+} 
+
+.btnMenubarsOpen {
+    position: fixed;
+    right: 40px;
+    z-index: 2;
+    color: white;
+}
+
+.btnMenubarsClosed {
+    grid-area: bars;
+
+    
+}
+
+@media (min-width: 992px) {
+
+    .btnMenubars {
+        display: none;
+    }
+}

@@ -26,7 +26,7 @@ const AboutCompany = () => {
                         quasi incidunt adipisci accusantium libero provident voluptate amet.
                     </p>
                     <div className="intro-buttons center-content">
-                        <Buttons type="black" title="Learn More" url="/learnmore" />
+                        <Buttons className='btn' type="black" title="Learn More" url="/learnmore" />
                         <Link to="/introvideo" className="btn-intro"><i className="fa-thin fa-circle-play"></i> Intro Video</Link>
                     </div>
                 </div>   

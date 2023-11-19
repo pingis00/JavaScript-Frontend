@@ -7,11 +7,12 @@ import ArticleIntro from './ArticleIntro'
 import Articletext from './Articletext'
 import CategoryList from './CategoryList'
 import RecentPosts from './RecentPosts'
+import ErrorMessages from '../generics/ErrorMessages'
 
 
 const Articles = () => {
 
-    const { article, getArticle, clearArticle } = useArticles()
+    const { article, getArticle, clearArticle, error } = useArticles()
     const {id} = useParams()
 
     const formatDate = (dateString) => {
@@ -25,6 +26,10 @@ const Articles = () => {
 
         return () => clearArticle()
     }, [])
+
+    if (error) {
+        return <ErrorMessages message={error} />
+    }
 
     return (
         <div className='article-section'> 

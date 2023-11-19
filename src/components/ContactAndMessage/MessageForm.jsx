@@ -58,7 +58,7 @@ const MessageForm = () => {
         }
     })
     useEffect(() => {
-        let timer;
+        let timer
         if (successMessage) {
             timer = setTimeout(() => {
                 setSuccessMessage('')

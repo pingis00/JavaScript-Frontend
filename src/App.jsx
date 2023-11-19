@@ -7,6 +7,7 @@ import NotFound from './views/NotFound/NotFound'
 import { ArticleProvider } from './contexts/ArticleContext'
 import ScrollToTop from './components/ScrollToTop/ScrollToTop'
 
+
 function App() {
 
   return (

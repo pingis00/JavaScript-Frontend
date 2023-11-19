@@ -6,17 +6,11 @@
     .container {
 
         .meet-our-team {
-            display: flex;
-            justify-content: space-between;
+            display: block;
             margin-bottom: 50px; 
 
-            .btn-yellow {
-                align-self: end;
-                text-align: center;
-                width: 225px;
-                height: auto;
+            .btn {
                 border: 1px solid #191919;
-                border-radius: 35px;
 
                 &:hover {
                     box-shadow: 6px 6px 5px 2px #a68636;
@@ -41,6 +35,29 @@
             }
         }
     }
+}
+
+@media (min-width: 576px) {
+
+    .team-introduction {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    
+        .container {
+    
+            .meet-our-team {
+                display: flex;
+                justify-content: space-between;
+    
+                .btn {
+                    align-self: end;
+                    text-align: center;
+                    width: 225px;
+                    height: auto;
+                }   
+            }
+        }
+    }        
 }
 
 @media (min-width: 768px) {
